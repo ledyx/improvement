@@ -1,8 +1,8 @@
-package com.example.improvement.advacned;
+package com.example.improvement.mapping.advacned;
 
-import com.example.improvement.mapping.advanced.layer.XXLogService;
-import com.example.improvement.mapping.basic.after.XLogPackMapper;
-import com.example.improvement.mapping.basic.after.XXLogPackAfterImprovement;
+import com.example.improvement.mapping.step2_advanced.layer.XXLogService;
+import com.example.improvement.mapping.step1_basic.after.XLogPackMapper;
+import com.example.improvement.mapping.step1_basic.after.XXLogPackAfterImprovement;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

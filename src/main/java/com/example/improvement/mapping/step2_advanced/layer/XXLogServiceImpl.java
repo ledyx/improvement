@@ -1,8 +1,8 @@
-package com.example.improvement.mapping.advanced.layer;
+package com.example.improvement.mapping.step2_advanced.layer;
 
-import com.example.improvement.mapping.advanced.XXLogPackDiMapper;
-import com.example.improvement.mapping.advanced.XXLogPackEntity;
-import com.example.improvement.mapping.basic.after.XXLogPackAfterImprovement;
+import com.example.improvement.mapping.step2_advanced.XXLogPackDiMapper;
+import com.example.improvement.mapping.step2_advanced.XXLogPackEntity;
+import com.example.improvement.mapping.step1_basic.after.XXLogPackAfterImprovement;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

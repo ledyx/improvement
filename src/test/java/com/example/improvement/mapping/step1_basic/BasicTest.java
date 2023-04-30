@@ -1,7 +1,7 @@
-package com.example.improvement.basic;
+package com.example.improvement.mapping.step1_basic;
 
-import com.example.improvement.mapping.basic.after.XLogPackMapper;
-import com.example.improvement.mapping.basic.after.XXLogPackAfterImprovement;
+import com.example.improvement.mapping.step1_basic.after.XLogPackMapper;
+import com.example.improvement.mapping.step1_basic.after.XXLogPackAfterImprovement;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import scouter.lang.pack.XLogPack;

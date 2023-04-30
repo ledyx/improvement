@@ -1,6 +1,6 @@
-package com.example.improvement.mapping.advanced;
+package com.example.improvement.mapping.step2_advanced;
 
-import com.example.improvement.mapping.basic.after.XXLogPackAfterImprovement;
+import com.example.improvement.mapping.step1_basic.after.XXLogPackAfterImprovement;
 import org.mapstruct.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import scouter.lang.TextTypes;

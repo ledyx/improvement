@@ -1,4 +1,4 @@
-package com.example.improvement.mapping.basic.after;
+package com.example.improvement.mapping.step1_basic.after;
 
 import org.mapstruct.*;
 import org.mapstruct.factory.Mappers;

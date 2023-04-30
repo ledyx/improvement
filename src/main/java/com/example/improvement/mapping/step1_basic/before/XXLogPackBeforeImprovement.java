@@ -1,4 +1,4 @@
-package com.example.improvement.mapping.basic.before;
+package com.example.improvement.mapping.step1_basic.before;
 
 import lombok.Builder;
 import lombok.Data;

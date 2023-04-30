@@ -1,4 +1,4 @@
-package com.example.improvement.mapping.advanced;
+package com.example.improvement.mapping.step2_advanced;
 
 import lombok.Data;
 import scouter.lang.pack.XLogPack;
