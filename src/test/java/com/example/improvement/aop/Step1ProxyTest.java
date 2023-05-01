@@ -4,7 +4,7 @@ import com.example.improvement.aop.step1_proxy.Proxy;
 import com.example.improvement.aop.step1_proxy.Subject;
 import org.junit.jupiter.api.Test;
 
-public class ProxyTest {
+public class Step1ProxyTest {
 
     @Test
     void test() {

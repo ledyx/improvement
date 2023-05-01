@@ -1,8 +1,8 @@
 package com.example.improvement.mapping.step2_advanced.layer;
 
+import com.example.improvement.mapping.step1_basic.after.XXLogPackAfter;
 import com.example.improvement.mapping.step2_advanced.XXLogPackDiMapper;
 import com.example.improvement.mapping.step2_advanced.XXLogPackEntity;
-import com.example.improvement.mapping.step1_basic.after.XXLogPackAfterImprovement;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,7 @@ public class XXLogServiceImpl implements XXLogService {
     private final XXLogPackDiMapper mapper;
 
     @Override
-    public void save(XXLogPackAfterImprovement dto) {
+    public void save(XXLogPackAfter dto) {
         XXLogPackEntity entity = mapper.toEntity(dto);
         repository.save(entity);
     }

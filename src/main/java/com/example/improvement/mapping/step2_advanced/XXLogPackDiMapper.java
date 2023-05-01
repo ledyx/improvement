@@ -1,6 +1,6 @@
 package com.example.improvement.mapping.step2_advanced;
 
-import com.example.improvement.mapping.step1_basic.after.XXLogPackAfterImprovement;
+import com.example.improvement.mapping.step1_basic.after.XXLogPackAfter;
 import org.mapstruct.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import scouter.lang.TextTypes;
@@ -22,7 +22,7 @@ public abstract class XXLogPackDiMapper {
     @Mapping(source = "dto", target = "xlog")
     @Mapping(source = "ipaddr", target = "ipaddr")
     @Mapping(source = "dto", target = "stackTrace", qualifiedByName = "remapStackTrace")
-    public abstract XXLogPackEntity toEntity(XXLogPackAfterImprovement dto);
+    public abstract XXLogPackEntity toEntity(XXLogPackAfter dto);
 
     // 사람이 읽을 수 있는 문자열로 IP 변환
     protected String map(byte[] ipaddr) {
@@ -31,7 +31,7 @@ public abstract class XXLogPackDiMapper {
 
     // dto로 받은 stackTrace가 null이면 다시 parsing
     @Named("remapStackTrace")
-    protected String remapStackTrace(XXLogPackAfterImprovement pack) {
+    protected String remapStackTrace(XXLogPackAfter pack) {
         return Optional.ofNullable(pack.getStackTrace())
                 .orElseGet(() -> {
                     String date = DateUtil.yyyymmdd(pack.endTime);
@@ -40,7 +40,7 @@ public abstract class XXLogPackDiMapper {
     }
 
     @AfterMapping
-    protected void mapXId(XXLogPackAfterImprovement dto, @MappingTarget XXLogPackEntity entity) {
+    protected void mapXId(XXLogPackAfter dto, @MappingTarget XXLogPackEntity entity) {
         int xid = xIdGenerator.generate(dto);
         entity.setXid(xid);
     }

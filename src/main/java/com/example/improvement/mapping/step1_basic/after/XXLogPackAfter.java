@@ -8,7 +8,7 @@ import scouter.lang.pack.XLogPack;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
-public class XXLogPackAfterImprovement extends XLogPack {
+public class XXLogPackAfter extends XLogPack {
     // 사용자 정의
     private String objectName;
     private String serviceName;

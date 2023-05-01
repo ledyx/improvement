@@ -14,11 +14,11 @@ import scouter.util.DateUtil;
 public interface XLogPackMapper {
     XLogPackMapper INSTANCE = Mappers.getMapper(XLogPackMapper.class);
 
-    XXLogPackAfterImprovement toXXLogPack(XLogPack dto);
+    XXLogPackAfter toXXLogPack(XLogPack dto);
 
     // 사용자 정의 Field
     @AfterMapping
-    default void mapAfterXXLogPack(XLogPack pack, @MappingTarget XXLogPackAfterImprovement xxLogPack) {
+    default void mapAfterXXLogPack(XLogPack pack, @MappingTarget XXLogPackAfter xxLogPack) {
         String date = DateUtil.yyyymmdd(pack.endTime);
         xxLogPack.setObjectName(TextRD.getString(date, TextTypes.OBJECT, pack.objHash));
         xxLogPack.setServiceName(TextRD.getString(date, TextTypes.SERVICE, pack.service));

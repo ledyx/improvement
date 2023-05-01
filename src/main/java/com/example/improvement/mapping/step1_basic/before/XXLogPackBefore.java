@@ -9,7 +9,7 @@ import scouter.util.DateUtil;
 
 @Data
 @Builder
-public class XXLogPackBeforeImprovement {
+public class XXLogPackBefore {
 
     private long endTime;
     /**
@@ -47,8 +47,8 @@ public class XXLogPackBeforeImprovement {
     private String threadName;
     private String stackTrace;
 
-    public XXLogPackBeforeImprovement from(XLogPack pack) {
-        XXLogPackBeforeImprovement xxLogPack = XXLogPackBeforeImprovement.builder()
+    public XXLogPackBefore from(XLogPack pack) {
+        XXLogPackBefore xxLogPack = XXLogPackBefore.builder()
                 .endTime(pack.endTime)
                 .objHash(pack.objHash)
                 .service(pack.service)

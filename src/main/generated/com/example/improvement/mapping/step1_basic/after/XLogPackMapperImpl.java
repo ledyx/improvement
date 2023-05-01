@@ -6,68 +6,68 @@ import scouter.lang.pack.XLogPack;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-04-30T18:52:52+0900",
-    comments = "version: 1.5.4.Final, compiler: javac, environment: Java 1.8.0_362 (Temurin)"
+    date = "2023-05-01T22:52:54+0900",
+    comments = "version: 1.5.4.Final, compiler: javac, environment: Java 11.0.17 (Eclipse Adoptium)"
 )
 public class XLogPackMapperImpl implements XLogPackMapper {
 
     @Override
-    public XXLogPackAfterImprovement toXXLogPack(XLogPack dto) {
+    public XXLogPackAfter toXXLogPack(XLogPack dto) {
         if ( dto == null ) {
             return null;
         }
 
-        XXLogPackAfterImprovement xXLogPackAfterImprovement = new XXLogPackAfterImprovement();
+        XXLogPackAfter xXLogPackAfter = new XXLogPackAfter();
 
-        xXLogPackAfterImprovement.endTime = dto.endTime;
-        xXLogPackAfterImprovement.objHash = dto.objHash;
-        xXLogPackAfterImprovement.service = dto.service;
-        xXLogPackAfterImprovement.txid = dto.txid;
-        xXLogPackAfterImprovement.threadNameHash = dto.threadNameHash;
-        xXLogPackAfterImprovement.caller = dto.caller;
-        xXLogPackAfterImprovement.gxid = dto.gxid;
-        xXLogPackAfterImprovement.elapsed = dto.elapsed;
-        xXLogPackAfterImprovement.error = dto.error;
-        xXLogPackAfterImprovement.cpu = dto.cpu;
-        xXLogPackAfterImprovement.sqlCount = dto.sqlCount;
-        xXLogPackAfterImprovement.sqlTime = dto.sqlTime;
+        xXLogPackAfter.endTime = dto.endTime;
+        xXLogPackAfter.objHash = dto.objHash;
+        xXLogPackAfter.service = dto.service;
+        xXLogPackAfter.txid = dto.txid;
+        xXLogPackAfter.threadNameHash = dto.threadNameHash;
+        xXLogPackAfter.caller = dto.caller;
+        xXLogPackAfter.gxid = dto.gxid;
+        xXLogPackAfter.elapsed = dto.elapsed;
+        xXLogPackAfter.error = dto.error;
+        xXLogPackAfter.cpu = dto.cpu;
+        xXLogPackAfter.sqlCount = dto.sqlCount;
+        xXLogPackAfter.sqlTime = dto.sqlTime;
         byte[] ipaddr = dto.ipaddr;
         if ( ipaddr != null ) {
-            xXLogPackAfterImprovement.ipaddr = Arrays.copyOf( ipaddr, ipaddr.length );
+            xXLogPackAfter.ipaddr = Arrays.copyOf( ipaddr, ipaddr.length );
         }
-        xXLogPackAfterImprovement.kbytes = dto.kbytes;
-        xXLogPackAfterImprovement.status = dto.status;
-        xXLogPackAfterImprovement.userid = dto.userid;
-        xXLogPackAfterImprovement.userAgent = dto.userAgent;
-        xXLogPackAfterImprovement.referer = dto.referer;
-        xXLogPackAfterImprovement.group = dto.group;
-        xXLogPackAfterImprovement.apicallCount = dto.apicallCount;
-        xXLogPackAfterImprovement.apicallTime = dto.apicallTime;
-        xXLogPackAfterImprovement.countryCode = dto.countryCode;
-        xXLogPackAfterImprovement.city = dto.city;
-        xXLogPackAfterImprovement.xType = dto.xType;
-        xXLogPackAfterImprovement.login = dto.login;
-        xXLogPackAfterImprovement.desc = dto.desc;
-        xXLogPackAfterImprovement.webHash = dto.webHash;
-        xXLogPackAfterImprovement.webTime = dto.webTime;
-        xXLogPackAfterImprovement.hasDump = dto.hasDump;
-        xXLogPackAfterImprovement.text1 = dto.text1;
-        xXLogPackAfterImprovement.text2 = dto.text2;
-        xXLogPackAfterImprovement.queuingHostHash = dto.queuingHostHash;
-        xXLogPackAfterImprovement.queuingTime = dto.queuingTime;
-        xXLogPackAfterImprovement.queuing2ndHostHash = dto.queuing2ndHostHash;
-        xXLogPackAfterImprovement.queuing2ndTime = dto.queuing2ndTime;
-        xXLogPackAfterImprovement.text3 = dto.text3;
-        xXLogPackAfterImprovement.text4 = dto.text4;
-        xXLogPackAfterImprovement.text5 = dto.text5;
-        xXLogPackAfterImprovement.profileCount = dto.profileCount;
-        xXLogPackAfterImprovement.b3Mode = dto.b3Mode;
-        xXLogPackAfterImprovement.profileSize = dto.profileSize;
-        xXLogPackAfterImprovement.discardType = dto.discardType;
-        xXLogPackAfterImprovement.ignoreGlobalConsequentSampling = dto.ignoreGlobalConsequentSampling;
+        xXLogPackAfter.kbytes = dto.kbytes;
+        xXLogPackAfter.status = dto.status;
+        xXLogPackAfter.userid = dto.userid;
+        xXLogPackAfter.userAgent = dto.userAgent;
+        xXLogPackAfter.referer = dto.referer;
+        xXLogPackAfter.group = dto.group;
+        xXLogPackAfter.apicallCount = dto.apicallCount;
+        xXLogPackAfter.apicallTime = dto.apicallTime;
+        xXLogPackAfter.countryCode = dto.countryCode;
+        xXLogPackAfter.city = dto.city;
+        xXLogPackAfter.xType = dto.xType;
+        xXLogPackAfter.login = dto.login;
+        xXLogPackAfter.desc = dto.desc;
+        xXLogPackAfter.webHash = dto.webHash;
+        xXLogPackAfter.webTime = dto.webTime;
+        xXLogPackAfter.hasDump = dto.hasDump;
+        xXLogPackAfter.text1 = dto.text1;
+        xXLogPackAfter.text2 = dto.text2;
+        xXLogPackAfter.queuingHostHash = dto.queuingHostHash;
+        xXLogPackAfter.queuingTime = dto.queuingTime;
+        xXLogPackAfter.queuing2ndHostHash = dto.queuing2ndHostHash;
+        xXLogPackAfter.queuing2ndTime = dto.queuing2ndTime;
+        xXLogPackAfter.text3 = dto.text3;
+        xXLogPackAfter.text4 = dto.text4;
+        xXLogPackAfter.text5 = dto.text5;
+        xXLogPackAfter.profileCount = dto.profileCount;
+        xXLogPackAfter.b3Mode = dto.b3Mode;
+        xXLogPackAfter.profileSize = dto.profileSize;
+        xXLogPackAfter.discardType = dto.discardType;
+        xXLogPackAfter.ignoreGlobalConsequentSampling = dto.ignoreGlobalConsequentSampling;
 
-        mapAfterXXLogPack( dto, xXLogPackAfterImprovement );
+        mapAfterXXLogPack( dto, xXLogPackAfter );
 
-        return xXLogPackAfterImprovement;
+        return xXLogPackAfter;
     }
 }

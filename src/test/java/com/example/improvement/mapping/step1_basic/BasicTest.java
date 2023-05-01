@@ -1,7 +1,7 @@
 package com.example.improvement.mapping.step1_basic;
 
 import com.example.improvement.mapping.step1_basic.after.XLogPackMapper;
-import com.example.improvement.mapping.step1_basic.after.XXLogPackAfterImprovement;
+import com.example.improvement.mapping.step1_basic.after.XXLogPackAfter;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import scouter.lang.pack.XLogPack;
@@ -17,7 +17,7 @@ public class BasicTest {
         xLogPack.service = 3;
         xLogPack.ipaddr = "192.168.0.2".getBytes();
 
-        XXLogPackAfterImprovement xxLogPack = XLogPackMapper.INSTANCE.toXXLogPack(xLogPack);
+        XXLogPackAfter xxLogPack = XLogPackMapper.INSTANCE.toXXLogPack(xLogPack);
 
         log.info("XLogPack : {}", xLogPack);
         log.info("XXLogPack : {}", xxLogPack);
